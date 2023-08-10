@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.login-section {
+  background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .login-section {
+    display: none;
+  }
+}
+.login-section #carousel-btn-sm {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .login-section #carousel-btn-sm {
+    display: block;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  .login-section #carousel-btn-sm img {
+    height: 20px;
+    width: 20px;
+  }
+}
+.login-section .login-form {
+  margin: 150px 50px 50px 50px;
+}
+.login-section .login-form .control-custom {
+  background-color: #F5F5F5;
+}
+.login-section .login-form h2 {
+  font-size: 20px;
+}
+.login-section .login-form label {
+  font-size: 15px;
+}
+.login-section .login-form #msgLogin {
+  display: none;
+  background-color: rgb(129, 245, 197);
+}
+.login-section .create-form {
+  display: none;
+  margin: 150px 50px 50px 50px;
+}
+.login-section .create-form .control-custom {
+  background-color: #F5F5F5;
+}
+.login-section .create-form h2 {
+  font-size: 20px;
+}
+.login-section .create-form label {
+  font-size: 12px;
+}
+.login-section .create-form #msgCreate {
+  display: none;
+  background-color: rgb(247, 167, 167);
+}
+
+.image-slider-section {
+  display: block;
+  height: 100vh;
+  background-color: #005EB5;
+  padding: 100px;
+}
+@media screen and (max-width: 600px) {
+  .image-slider-section {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+}
+.image-slider-section .carousel-custom {
+  max-width: 500px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.image-slider-section .carousel-custom .carousel-inner .carousel-item {
+  max-width: 400px;
+  text-align: center;
+}
+.image-slider-section .carousel-custom .carousel-inner .carousel-item img {
+  display: inline-block;
+  width: 100%;
+}
+.image-slider-section .carousel-custom .carousel-inner .carousel-item .carousel-caption-custom p {
+  padding-top: 18px;
+  font-size: 12px;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .image-slider-section .carousel-custom .carousel-inner .carousel-item .carousel-caption-custom p {
+    font-size: 20px;
+  }
+}
+
+.indicator-custom {
+  position: absolute;
+  bottom: -50px;
+}
+.indicator-custom li {
+  height: 5px;
+  border-top: unset;
+  border-bottom: unset;
+  border-radius: 10px;
+}
+
+#login-btn-sm {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  #login-btn-sm {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    padding: 10px;
+    background-color: #fff;
+    width: 300px;
+    left: 50px;
+    border-radius: 5%;
+    color: #333333;
+  }
+}

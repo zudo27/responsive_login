@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-section { 
+    background-color: #fff;
+    @media screen and (max-width: 600px) {
+        display: none;
+    } 
+    #carousel-btn-sm{
+        display: none;
+        @media screen and (max-width: 600px) {
+            display: block;
+            border-radius: 50%;
+            margin-top: 20px;
+            img {
+                height: 20px;
+                width: 20px;
+
+            }
+        } 
+    }
+
+    .login-form {
+        margin:150px 50px 50px 50px;
+        .control-custom {
+            background-color: #F5F5F5;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        label {
+            font-size: 15px;
+        }
+        #msgLogin{
+            display: none;
+            background-color: rgb(129, 245, 197);
+        }
+    }
+    .create-form {
+        display: none;
+        margin:150px 50px 50px 50px;
+
+        .control-custom {
+            background-color: #F5F5F5;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        label {
+            font-size: 12px;
+        }
+        #msgCreate{
+            display: none;
+            background-color: rgb(247, 167, 167);
+        }
+    }
+
+}
+
+.image-slider-section {
+    display: block;
+    height: 100vh;
+    background-color: #005EB5;
+    padding: 100px;
+    @media screen and (max-width: 600px) {
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+    }
+    .carousel-custom {
+        max-width: 500px;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        .carousel-inner {
+            .carousel-item {
+                max-width: 400px;
+                text-align: center;
+                img {
+                    display: inline-block;
+                    width: 100%;
+                }
+                .carousel-caption-custom {
+                    p { 
+                        padding-top: 18px;
+                        font-size: 12px;
+                        color: #fff;
+                        @media screen and (max-width: 600px) {
+                            font-size: 20px;
+                        }
+                    }
+
+                }
+
+            }
+        }
+    }
+}
+.indicator-custom {
+    position: absolute;
+    bottom: -50px;
+    li {
+        height: 5px;
+        border-top:unset ;
+        border-bottom: unset;
+        border-radius: 10px;
+    }
+}
+#login-btn-sm {
+    display: none;
+    @media screen and (max-width: 600px) {
+        display:block;
+        position: absolute;
+        bottom: 50px;
+        padding: 10px;
+        background-color: #fff;
+        width: 300px;
+        left: 50px;
+        border-radius: 5%;
+        color: #333333;  
+    }
+}
+
